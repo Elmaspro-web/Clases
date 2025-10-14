@@ -1,0 +1,198 @@
+[08-Oct-2025 17:29:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getDNI() in E:\Ampps\www\PHP_UD2\Clases\clases.php:45
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 45
+[08-Oct-2025 17:29:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getDNI() in E:\Ampps\www\PHP_UD2\Clases\clases.php:45
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 45
+[08-Oct-2025 17:29:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getDNI() in E:\Ampps\www\PHP_UD2\Clases\clases.php:45
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 45
+[08-Oct-2025 17:31:23 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Persona::getDNI(), 0 passed in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 45 and exactly 1 expected in E:\Ampps\www\PHP_UD2\Clases\clases.php:29
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(45): Persona->getDNI()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 29
+[08-Oct-2025 17:31:25 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Persona::getDNI(), 0 passed in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 45 and exactly 1 expected in E:\Ampps\www\PHP_UD2\Clases\clases.php:29
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(45): Persona->getDNI()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 29
+[08-Oct-2025 17:46:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Persona::getSaldo() in E:\Ampps\www\PHP_UD2\Clases\clases.php:66
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 66
+[08-Oct-2025 17:47:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:47:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:48:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:49:04 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "," or ";" in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 74
+[08-Oct-2025 17:49:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:49:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:49:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:49:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:49:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:49:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:50:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:70
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(75): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 70
+[08-Oct-2025 17:50:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:70
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(75): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 70
+[08-Oct-2025 17:50:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:50:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:50:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:67
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(72): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 67
+[08-Oct-2025 17:50:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:50:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Cliente::getNombre() in E:\Ampps\www\PHP_UD2\Clases\clases.php:61
+Stack trace:
+#0 E:\Ampps\www\PHP_UD2\Clases\clases.php(66): Cliente->__toString()
+#1 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 61
+[08-Oct-2025 17:58:54 UTC] PHP Fatal error:  Cannot redeclare Cliente::$saldo in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 46
+[08-Oct-2025 17:58:54 UTC] PHP Fatal error:  Cannot redeclare Cliente::$saldo in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 46
+[08-Oct-2025 17:58:54 UTC] PHP Fatal error:  Cannot redeclare Cliente::$saldo in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 46
+[08-Oct-2025 17:58:54 UTC] PHP Fatal error:  Cannot redeclare Cliente::$saldo in E:\Ampps\www\PHP_UD2\Clases\clases.php on line 46
+[10-Oct-2025 14:42:04 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "holas" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php:25
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 25
+[10-Oct-2025 14:42:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "holas" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php:25
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 25
+[10-Oct-2025 14:42:25 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "holas" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php:25
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 25
+[10-Oct-2025 14:42:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "holas" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php:25
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 25
+[10-Oct-2025 14:42:57 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "," or ";" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 26
+[10-Oct-2025 14:43:47 UTC] PHP Parse error:  syntax error, unexpected token "}", expecting ";" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 22
+[10-Oct-2025 14:43:58 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "," or ";" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 26
+[10-Oct-2025 14:44:17 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "," or ";" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 26
+[10-Oct-2025 14:44:32 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "," or ";" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 26
+[10-Oct-2025 14:44:43 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "," or ";" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 26
+[10-Oct-2025 14:45:12 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting "," or ";" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 26
+[10-Oct-2025 14:45:20 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "holas" in E:\Ampps\www\PHP_UD2\Clases\interfaces.php:25
+Stack trace:
+#0 {main}
+  thrown in E:\Ampps\www\PHP_UD2\Clases\interfaces.php on line 25
