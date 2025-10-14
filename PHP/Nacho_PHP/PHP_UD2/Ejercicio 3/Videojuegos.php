@@ -1,10 +1,13 @@
 <?php
 require_once './Hobby.php';
 require_once './Acciones.php';
-class Videojuegos extends Hobby implements Acciones
+require_once './Temporizador.php';
+class Videojuegos extends Hobby implements Acciones, Temporizador
 {
-    const SE_JUEGA = "SI";
+    const SE_PUEDE_JUEGAR = "SI";
     static $personaje = 1;
+
+
     function __construct
     (
         protected string $nombre,
@@ -15,6 +18,16 @@ class Videojuegos extends Hobby implements Acciones
     function __destruct()
     {
         echo "Se ha eliminado el videojuego:" . $this->nombre;
+    }
+
+    public function tienpoMin()
+    {
+        return "Tu tiempo minimo son 5 mins";
+    }
+
+    public function tienpoMax()
+    {
+        return "Tu tiempo maximo son 3H";
     }
 
     public function iniciar()
@@ -30,6 +43,15 @@ class Videojuegos extends Hobby implements Acciones
         return "Se esta actualizando $this->nombre";
     }
 
+    public function getPersonaje()
+    {
+        return self::$personaje;
+    }
+
+    public function setPersonaje(int $personaje)
+    {
+        self::$personaje = $personaje;
+    }
 
     public function getNombre()
     {
