@@ -1,0 +1,9 @@
+[07-Oct-2025 14:34:05 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
+[07-Oct-2025 14:34:06 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
+[07-Oct-2025 14:34:06 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
+[07-Oct-2025 14:34:07 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
+[07-Oct-2025 14:34:07 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
+[07-Oct-2025 14:34:07 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
+[07-Oct-2025 14:34:07 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
+[07-Oct-2025 14:34:08 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
+[07-Oct-2025 14:34:08 UTC] PHP Warning:  Undefined variable $value2 in E:\Ampps\www\PHP_UD2\error.php on line 5
