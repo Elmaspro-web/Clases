@@ -13,13 +13,17 @@ class Videojuegos extends Hobby implements Acciones, Temporizador
         protected string $nombre,
         protected string $tipo,
         protected int $edad_recomendada
-    ){}
+    )
+    {}
 
     function __destruct()
     {
         echo "Se ha eliminado el videojuego:" . $this->nombre;
     }
-
+    public function __toString()
+    {
+        return "Este juego " . $this->nombre . " es de tipo " . $this->tipo . " para edades mayores a " . $this->edad_recomendada;
+    }
     public function tienpoMin()
     {
         return "Tu tiempo minimo son 5 mins";

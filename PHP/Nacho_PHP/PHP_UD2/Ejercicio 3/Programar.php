@@ -9,7 +9,7 @@ class Programar extends Hobby
 
 
 
-    public function __construct($lenguaje, $tipo, $mainIA)
+    public function __construct($lenguaje = "ES", $tipo, $mainIA)
     {
         $this->lenguaje = $lenguaje;
         $this->tipo = $tipo;

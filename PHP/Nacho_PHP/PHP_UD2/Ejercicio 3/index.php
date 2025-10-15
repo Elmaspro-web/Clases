@@ -10,15 +10,17 @@ for ($i = 0; $i < N_JUEGOS; $i++)
     $juego = new Videojuegos($ayuda->nombreAlea(), $ayuda->nombreAlea(), $ayuda->nNpcsAlea());
     echo $juego->getNombre();
     echo "<br>";
-    // unset($juego);
+    unset($juego);
     echo "<br>";
 }
 
 $prueba = new Videojuegos("Nacho", "pilin", 18);
 
 echo $prueba->getPersonaje();
+echo "<br>";
 $prueba->setPersonaje(2);
 echo $prueba->getPersonaje();
+echo "<br>";
 
-$pruebaUno = new Videojuegos(":(", "pilin", 19);
+$pruebaUno = new Videojuegos(" :( ", " pilin ", 19);
 echo $pruebaUno->getPersonaje();
