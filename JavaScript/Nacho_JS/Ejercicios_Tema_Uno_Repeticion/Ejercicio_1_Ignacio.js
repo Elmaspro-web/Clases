@@ -12,7 +12,7 @@ function nVocales(cadena)
     let cont = 0;
     for (let i = 0; i < cadena.length; i++)
     {
-        // Le indicamos los valor que si tienen ejecuta en este las vocales y aumentaria el contador
+        // Le indicamos los valores que si tienen ejecuta en este las vocales y aumentaría el contador
         if (cadena[i] === 'a' || cadena[i] === 'e' || cadena[i] === 'i' || cadena[i] === 'o' || cadena[i] === 'u')
         {
             cont++;
@@ -22,5 +22,5 @@ function nVocales(cadena)
     return cont;
 }
 
-// Mostramos por la consola el numero de vocales
+// Mostramos por la consola el número de vocales
 console.log(nVocales(cadena));
