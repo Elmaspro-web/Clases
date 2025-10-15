@@ -20,7 +20,7 @@ function menorRepeticion(arrayNumero)
     // Inicializamos 2 variables que una sea muy grande para que pueda entrar en el if de abajo
     // porque nos ayudara a buscar el de menor repetición
     // Ademas inicializamos el resultado de que numero sera el que menos repeticiones tendra
-    let guardado = 1000000;
+    let guardado = Infinity;
     let result = 0;
 
     // Hacemos otro forin que lea el contador (Numeros de repeticiones) y busque el menor gracias a un if
@@ -28,15 +28,20 @@ function menorRepeticion(arrayNumero)
     {
 
         // Este if lo que hace es guardar en "guardado" el numero mas pequeño siempre entrara porque el numero sera
-        // menor a 1000000 entonces se guarda de 1 en uno hasta que encuentra el menor. En este caso tambien vamos cuardando
+        // menor a Infinito entonces se guarda de 1 en uno hasta que encuentra el menor. En este caso tambien vamos cuardando
         // que valor es el menor: 1:2 2:2 4:1 5:2 por lo tanto se quedara con el 4 en el result y el 1 es el que detectara como menor
         if (cont[numero] < guardado)
         {
+            // Vamos almacenando el menor valor
             guardado = cont[numero];
             result = numero;
         }
     }
+
+    // Devolvemos el resultado
     return result;
 }
 
+
+// Llamamos a la consola para que nos muestre que numero se mostrara por pantalla
 console.log(menorRepeticion(arrayNumero))
