@@ -14,7 +14,7 @@ function rep(numArray)
         count[numero] = (count[numero] || 0) + 1;
     }
 
-    let minimo = 100000;
+    let minimo = Infinity;
     let result = 0;
 
     for (let numero in count)
