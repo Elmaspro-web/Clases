@@ -1,11 +1,8 @@
 
-
-let n = 101;
-const res = [];
-for (let i = 0; i < 4; i++) {
-    const root = Math.floor(Math.sqrt(n));
-    res.push(root);
-    n -= root * root;
-    if (n === 0) break;
+let array = [1,2,3,6,2,3,4];
+let cont = [];
+for (const numero of array)
+{
+    cont[numero] = (cont[numero] || 0) + 1;
+    console.log(cont[numero])
 }
-console.log(res)
