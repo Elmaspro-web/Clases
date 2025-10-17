@@ -10,46 +10,44 @@
 const intervalos =
     [
         [1,5],
-        [7,6],
-        [1,2]
+        [7,4],
+        [2,5]
     ];
 
 // Creamos la función intervalosSuperpuestos
 function intervalosSuperpuestos(intervalos)
 {
-
-    // Inicializamos variables para su futuro uso
-    // arrayN es guardar todos los números de los array de arriba
-    // guardarMenor se inicializa en Infinito para que detecte el menor la primera vez seguro
-    // guardarMayor se inicializa en -Infinito para que el primer mayor entre seguro
-    let arrayN = [];
-    let guardarMenor = Infinity;
-    let guardarMayor = -Infinity;
-
-    // Creamos el for que primero me divide el array de arrays en números simples
-    for (const numero in intervalos) {
-        for (let i = 0; i < intervalos.length-1; i++)
+    for (let i = 0; i < intervalos.length; i++) {
+        let [inicio, fin] = intervalos[i];
+        if (inicio > fin)
         {
-            // Añade 1 a 1 los valores numéricos por orden empezando en este caso en el 1 luego el 5,7,6,1 y por último el 2.
-            arrayN.push(intervalos[numero][i]);
-            for (let j = 0; j < arrayN.length; j++)
-            {
-                // en estos for va guardando el primer valor que coge y comprueba primero el 1 que entra en ambos
-                // luego con el 5 como 5 es mayor que uno se salta el primer if, pero como es mayor que el 1 entra en el segundo,
-                // provocando que la variable que guarda el mayor sea ahora 5, ahora con el 7 pasa lo mismo en el primer if no entra porque el 7 es mayor,
-                // pero en el segundo entra porque 7 > 5, asi sucesivamente hasta el final.
-                if(arrayN[j] < guardarMenor)
-                {
-                    guardarMenor = arrayN[j];
-                }
-                if(arrayN[j] > guardarMayor)
-                {
-                    guardarMayor = arrayN[j];
-                }
-            }
+            intervalos[i] = [fin, inicio];
         }
     }
-    return `${guardarMenor}, ${guardarMayor}`;
+
+    intervalos.sort((a,b) => a[0] - b[0]);
+    let resultado = [];
+    let actual = intervalos[0];
+
+    // Recorrer el resto y comparar
+    for (let i = 1; i < intervalos.length; i++) {
+        let [inicio, fin] = intervalos[i];
+
+        // Si el inicio del nuevo intervalo está dentro del actual (se superponen)
+        if (inicio <= actual[1]) {
+            // Fusionar: actualizar el final si es más grande
+            actual[1] = Math.max(actual[1], fin);
+        } else {
+            // Si no se superponen, guardamos el actual y pasamos al siguiente
+            resultado.push(actual);
+            actual = intervalos[i];
+        }
+    }
+
+    // Agregar el último intervalo
+    resultado.push(actual);
+
+    return resultado;
 }
 
-console.log(intervalosSuperpuestos(intervalos))
+console.log(intervalosSuperpuestos(intervalos));

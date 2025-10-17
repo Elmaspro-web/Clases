@@ -2,7 +2,7 @@
 // un número impar de veces.
 
 // Inicializamos la variable del array
-const arrayEnteros = [1,3,3,2];
+const arrayEnteros = [1,3,3,3,2];
 
 // Creamos la función que lo leerá
 function aparecenImpar(arrayEnteros)

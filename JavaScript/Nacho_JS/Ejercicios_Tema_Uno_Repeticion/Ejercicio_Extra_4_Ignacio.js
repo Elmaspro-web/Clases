@@ -23,28 +23,9 @@ function sumaCero(arrayEnteros)
             {
 
                 // con el if comparamos 3 números en escalada para ver si son 0
-                if ((arrayEnteros[i] + arrayEnteros[j] + arrayEnteros[k]) === 0)
+                if ((arrayEnteros[i] + arrayEnteros[j] + arrayEnteros[k]) === 0 && i !== j && i !== k && j !== k)
                 {
-
-                    // Creamos el array que tendrá los 3 valores que den 0 y se ordenan para ser comparados bien
-                    let valores = [arrayEnteros[i], arrayEnteros[j], arrayEnteros[k]].sort((a,b)=>a-b);
-
-                    // Es un if que tiene que dar FALSE, como lo hace, facil: guardar.some hace que conque 1 valor de 1 condicion ya vale,
-                    // .some(... => condicion) los ... son cualquier nombre.
-                    // Luego le añades que la condición sea: que si (trio.every(...) => ...) donde every hace que sean toooodos los valores
-                    // (a cada valor se le asigna: POSICION y VALOR y luego saca una condicion de que cuando posición sea igual a valores[valor] guarde,
-                    // que pasa que esto guarda valores duplicados y por eso de debe negar al principio
-                    //
-                    // Ejemplo: encuentra que 1,2,-3 === 0, por tanto valores es [1,2,-3]. Bien guardar esta sin valores por tanto va a entrar 100%,
-                    // imaginemos que no, y el valor ya esta metido y es identico, hace que "trio" que seria [-3,1,2], verfique si el proximo que se le añade ([-3,1,2])
-                    // es identico, como lo hacemos: con el .every mira TODOS los valores, 0 = -3, 1 = 1, 2 = 2, si valor (-3, 1 o 2) es igual al nuevo array que entra
-                    // con valores -3 === (valores[0] = -3) y esto si se cumple las 3 veces hace que de true pero como esta puesto el !, significa que no se añade uno nuevo.
-                    if (!guardar.some(trio => trio.every((valor, posicion) => valor === valores[valor])))
-                    {
-                        guardar.push(valores);
-                        console.log(guardar);
-                    }
-
+                    console.log(i, j, k);
                 }
             }
         }
