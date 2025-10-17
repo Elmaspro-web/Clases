@@ -3,7 +3,7 @@
 // empate devuelve el número más pequeño.
 
 // Creamos el array de números
-let arrayNumero = [1,2,5,4,5,1,6];
+let arrayNumero = [1,5,4,5,1,6,2];
 
 // Creamos la función para buscar el número con menos repeticiones
 function menorRepeticion(arrayNumero)
