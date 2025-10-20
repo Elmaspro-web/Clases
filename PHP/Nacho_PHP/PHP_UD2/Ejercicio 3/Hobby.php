@@ -3,6 +3,6 @@
 abstract class Hobby
 {
         function setNombre(string $nombre){}
-        function getNombre(){}
+        function getNombre() : string{}
 
 }
