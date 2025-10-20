@@ -7,6 +7,10 @@ class Videojuegos extends Hobby implements Acciones, Temporizador
     const SE_PUEDE_JUEGAR = "SI";
     static $personaje = 1;
 
+    /* Hay 3 G en este hay 2: Esta G1) Inicia*/
+    /* En el Index.php esta el ultimo */
+    protected $data = array();
+    /* G1) Termina */
 
     function __construct
     (
@@ -24,12 +28,12 @@ class Videojuegos extends Hobby implements Acciones, Temporizador
     {
         return "Este juego " . $this->nombre . " es de tipo " . $this->tipo . " para edades mayores a " . $this->edad_recomendada;
     }
-    public function tienpoMin()
+    public function tiempoMin()
     {
         return "Tu tiempo minimo son 5 mins";
     }
 
-    public function tienpoMax()
+    public function tiempoMax()
     {
         return "Tu tiempo maximo son 3H";
     }
@@ -46,6 +50,20 @@ class Videojuegos extends Hobby implements Acciones, Temporizador
     {
         return "Se esta actualizando $this->nombre";
     }
+
+
+    /* G2) Inicia */
+
+    public function __get($clave)
+    {
+        return $this->data[$clave];
+    }
+
+    public function __set($clave, $valor)
+    {
+        $this->data[$clave] = $valor;
+    }
+    /* G2) Termina */
 
     public function getPersonaje()
     {

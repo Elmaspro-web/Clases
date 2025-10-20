@@ -3,7 +3,7 @@
 interface Temporizador
 {
 
-    public function tienpoMin();
-    public function tienpoMax();
+    public function tiempoMin();
+    public function tiempoMax();
 
 }
