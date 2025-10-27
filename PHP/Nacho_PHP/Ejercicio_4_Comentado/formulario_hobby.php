@@ -51,25 +51,23 @@ header del archivo destino exista para saber que ha llegado -->
 <h1>Formulario</h1>
 <form action="destino.php" method="post" enctype="multipart/form-data">
     <label>Nombre:
-        <input type="text" name="nombre" value="<?php if(!empty($nombre)){ echo $nombre;}?>">
+        <input type="text" name="nombre" value="<?php if (isset($_GET['nombre'])) {echo $_GET['nombre'];}?>">
     </label>
     <br>
     <br>
-
     <label>Tipo:
-        <input type="text" name="tipo" value="<?php if(!empty($type)){ echo $type;}?>">
+        <input type="text" name="tipo" value="<?php if (isset($_GET['tipo'])) {echo $_GET['tipo'];}?>">
     </label>
     <br>
     <br>
     <!-- Lo aprendimos con MªCristina -->
     <label>Dificultad (0-10):
-        <input type="number" name="dificultad" min="0" max="10" oninput="if(this.value.length > 2) this.value = this.value.slice(0,2);" value="<?php if(!empty($difficulty)){ echo $difficulty;}?>">
+        <input type="number" name="dificultad" min="0" max="10" oninput="if(this.value.length > 2) this.value = this.value.slice(0,2);" value="<?php if (isset($_GET['dificultad'])) {echo $_GET['dificultad'];}?>">
     </label>
     <br>
     <br>
-
     <label>Horas para completar el juego:
-        <input type="number" name="horasMax" min="0" max="300" oninput="if(this.value.length > 3) this.value = this.value.slice(0,3);" value="<?php if(!empty($horas)){ echo $horas;}?>">
+        <input type="number" name="horasMax" min="0" max="300" oninput="if(this.value.length > 3) this.value = this.value.slice(0,3);" value="<?php if (isset($_GET['horasMax'])) {echo $_GET['horasMax'];}?>">
     </label>
     <br>
     <br>

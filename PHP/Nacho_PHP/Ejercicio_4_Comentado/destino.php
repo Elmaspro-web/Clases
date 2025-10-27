@@ -12,6 +12,18 @@ Investiga la variable superglobal $_SERVER["REQUEST_METHOD"]*/
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['escondido'] === 'enviado') {
 
+        $clasesFormulario = [
+          'Nombre' => $_POST['nombre'] ?? '',
+          'Tipo' => $_POST['tipo'] ?? '',
+          'Dificultad' => $_POST['dificultad'] ?? '',
+          'HorasMax' => $_POST['horasMax'] ?? '',
+        ];
+
+        $nombre = $clasesFormulario['Nombre'];
+        $type = $clasesFormulario['Tipo'];
+        $difficulty = $clasesFormulario['Dificultad'];
+        $horas = $clasesFormulario['HorasMax'];
+
         /* 3) Al obtenerlos, como cadena, deberás convertirlos
         al tipo de dato primitivo que
         corresponda: integer, float, boolean,
@@ -105,7 +117,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['escondido'] === 'enviado') {
                     {
                         $mensaje = "Todos los campos están correctamente rellenados y el PDF se ha subido exitosamente. La ruta: " . $videojuego->__get('fotografía');
 
-                        header("Location: formulario_hobby.php?objeto=" . urlencode($objSerializado) . "&mensajeMostrar=" . urlencode($mensaje));
+                        header(
+                            "Location: formulario_hobby.php?" .
+                            "objeto=" . urlencode($objSerializado) .
+                            "&mensajeMostrar=" . urlencode($mensaje) .
+                            "&nombre=" . urlencode($nombre) .
+                            "&tipo=" . urlencode($type) .
+                            "&dificultad=" . urlencode($difficulty) .
+                            "&horasMax=" . urlencode($horas)
+                        );
                         exit;
                     }
                     else
@@ -127,6 +147,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['escondido'] === 'enviado') {
         /* urlencode es para convertir el mensaje en una version para el URL,
         en este caso le enviamos el contenido que reciba de $mensaje */
 
-        header("Location: formulario_hobby.php?mensajeMostrar=" . urlencode($mensaje));
+    header(
+        "Location: formulario_hobby.php?" .
+        "mensajeMostrar=" . urlencode($mensaje) .
+        "&nombre=" . urlencode($nombre) .
+        "&tipo=" . urlencode($type) .
+        "&dificultad=" . urlencode($difficulty) .
+        "&horasMax=" . urlencode($horas)
+    );
         exit;
 }
