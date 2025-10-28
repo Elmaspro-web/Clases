@@ -123,8 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['escondido'] === 'enviado') {
                             "&mensajeMostrar=" . urlencode($mensaje) .
                             "&nombre=" . urlencode($nombre) .
                             "&tipo=" . urlencode($type) .
-                            "&dificultad=" . urlencode($difficulty) .
-                            "&horasMax=" . urlencode($horas)
+                            "&dificultad=" . urlencode($difficulty)
                         );
                         exit;
                     }
@@ -152,8 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST['escondido'] === 'enviado') {
         "mensajeMostrar=" . urlencode($mensaje) .
         "&nombre=" . urlencode($nombre) .
         "&tipo=" . urlencode($type) .
-        "&dificultad=" . urlencode($difficulty) .
-        "&horasMax=" . urlencode($horas)
+        "&dificultad=" . urlencode($difficulty)
     );
         exit;
 }

@@ -11,7 +11,11 @@ class Libro extends Hobby implements Acciones
     protected string $nombreAutor;
     protected int $numeroCapitulos;
     protected float $precio;
+    protected string $nombre;
     CONST IVA = 21;
+    protected string $editorial;
+    protected int $anioPublicacion;
+    protected $data = [];
     public static int $librosCreados = 0;
 
     /* Constructor */
@@ -38,10 +42,10 @@ class Libro extends Hobby implements Acciones
     }
 
     /* Getters y Setters */
-    public function setNombre($nombre): void
-    {$this->nombre = $nombre;}
     public function getNombre(): string
-    {return $this->nombre;}
+    {return  $this->nombre;}
+    public function setNombre(string $nombre): void
+    {$this->nombre = $nombre;}
     public function getNumeroPaginas(): int
     {return $this->numeroPaginas;}
     public function setNumeroPaginas($numeroPaginas): void
@@ -90,6 +94,16 @@ class Libro extends Hobby implements Acciones
         }
         return implode(" - - - ",$mensajes);
     }
+    // __set y __get para crear variables no existentes de forma
+    // nativa dentro de una clase
+    public function __set($clave, $valor)
+    {
+        $this->data[$clave] = $valor;
+    }
+    public function __get($clave)
+    {
+        return $this->data[$clave];
+    }
 
     public function __toString()
     {
@@ -99,11 +113,11 @@ class Libro extends Hobby implements Acciones
         $texto .= "Número de capítulos: " . $this->numeroCapitulos . "<br>";
         $texto .= "Precio: $" . $this->precio . "<br>";
 
-        /* .= agregar al final de la variable */
-
-        if(isset($this->Editorial)) $texto .= "Editorial: " . $this->Editorial . "<br>";
-
-        if(isset($this->anioPublicacion)) $texto .= "Año de publicación: " . $this->anioPublicacion . "<br>";
+//        /* .= agregar al final de la variable */
+//
+//        if(isset($this->Editorial)) $texto .= "Editorial: " . $this->Editorial . "<br>";
+//
+//        if(isset($this->anioPublicacion)) $texto .= "Año de publicación: " . $this->anioPublicacion . "<br>";
 
         return $texto;
     }

@@ -29,7 +29,7 @@ $randomizar = new Ayuda();
 $libroCuatro = new Libro($randomizar->stringAleatorio(), $randomizar->intAleatorioGrande(), $randomizar->stringAleatorio(), $randomizar->intAleatorioPequeno(), $randomizar->floatAleatorio());
 echo "Nombre del libro: " . $libroCuatro->getNombre();
 echo "<br>";
-echo "Numero de capitulos: " . $libroCuatro->getNumeroPaginas();
+echo "Numero de páginas: " . $libroCuatro->getNumeroPaginas();
 echo "<br>";
 echo "Nombre del autor: " . $libroCuatro->getNombreAutor();
 echo "<br>";
@@ -41,20 +41,17 @@ echo "<br>";echo "<hr>";
 
 define("NUMERO", rand(1,5));
 
-$nuevosAtributosEjercicioGE = ["Editorial", 'anioPublicacion'];
-
 for ($i = 0; $i < NUMERO; $i++)
 {
     $libroAleatorio = new Libro($randomizar->stringAleatorio(), $randomizar->intAleatorioGrande(), $randomizar->stringAleatorio(), $randomizar->intAleatorioPequeno(), $randomizar->floatAleatorio());
-
-    foreach ($nuevosAtributosEjercicioGE as $clave)
-    {
-        $libroAleatorio->$clave = $randomizar->stringAleatorio();
-    }
+    // Aqui creamos la variable y la usamos abajo
+    ///* Array Global al que se le añaden en el "vuelo" datos */
+    $libroAleatorio->editorial = $randomizar->stringAleatorio();
+    $libroAleatorio->anioPublicacion = $randomizar->intAleatorioGrande();
 
     echo "Nombre del libro: " . $i+1 . " " . $libroAleatorio->getNombre();
     echo "<br>";
-    echo "Editorial: " . $libroAleatorio->Editorial;
+    echo "Editorial: " . $libroAleatorio->editorial;
     echo "<br>";
     echo "Año de publicación: " . $libroAleatorio->anioPublicacion;
     echo "<br>";
@@ -62,21 +59,18 @@ for ($i = 0; $i < NUMERO; $i++)
     echo "<hr>";
 }
 
-/* Array Global al que se le añaden en el "vuelo" datos */
-
 $libroCinco = new Libro("Gachiakuta", 100, "Nacho",5,8.95);
-
-$nuevosAtributos = ["Editorial", 'anioPublicacion'];
-
-foreach ($nuevosAtributos as $clave)
-{
-    $libroCinco->$clave = $randomizar->stringAleatorio();
-}
+$libroCinco->editorial = $randomizar->stringAleatorio();
+$libroCinco->anioPublicacion = $randomizar->intAleatorioGrande();
 
 echo $libroCinco;
 echo "<br>";echo "<hr>";
 
 echo "IVA " . Libro::IVA . "%";
+echo "<br>";
+echo "Editorial: " . $libroCinco->editorial;
+echo "<br>";
+echo "Año de publicacion: " . $libroCinco->anioPublicacion;
 echo "<br>";
 echo Libro::mostrarCantidadLibros();
 echo "<br>";

@@ -14,7 +14,6 @@ if (isset($_GET['objeto'])) {
     echo "Nombre: " . $videojuego->getNombre() . "<br>";
     echo "Tipo: " . $videojuego->getType() . "<br>";
     echo "Dificultad: " . $videojuego->getDifficulty() . "<br>";
-    echo "Horas totales: " . $videojuego->getHorasTotales() . "<br>";
     echo "Fotografía: " . $videojuego->__get('fotografía') . "<br><br><hr>";
 }
 ?>
