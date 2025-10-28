@@ -14,8 +14,7 @@ class Videojuegos2 extends Hobby2 implements Acciones2, Temporizador2
     static $personaje = 1;
     protected string $type;
     protected string $difficulty;
-    protected int $horasTotales;
-    const PLATAFORMA = "NachoStation5";
+    CONST PLATAFORMA = "NachoStation5";
 
     /* Array del G */
     protected $data = array();
@@ -23,17 +22,15 @@ class Videojuegos2 extends Hobby2 implements Acciones2, Temporizador2
     /* H) Crea el constructor y destructor de tu
     hobby e implementa el mét0do mágico __toString() */
 
-    public function __construct($nombre,$type, $difficulty, $horasTotales)
+    public function __construct($nombre,$type, $difficulty)
     {
         $this->nombre = $nombre;
         $this->type = $type;
         $this->difficulty = $difficulty;
-        $this->horasTotales = $horasTotales;
     }
-
     function __destruct()
     {
-        echo "Se ha eliminado el videojuego: " . $this->nombre;
+        echo "Se ha eliminado el videojuego:" . $this->nombre;
     }
     public function __toString()
     {
@@ -56,19 +53,16 @@ class Videojuegos2 extends Hobby2 implements Acciones2, Temporizador2
     public function setType($type): void
     {$this->type = $type;}
     public function getDifficulty() : string
-    {return "$this->difficulty/10";}
+    {return $this->difficulty;}
     public function setDifficulty($difficulty): void
     {$this->difficulty = $difficulty;}
     public function getPlataforma() : string
     {return self::PLATAFORMA;}
-    public function getHorasTotales(): int
-    {return $this->horasTotales;}
-    public function setHorasTotales(int $horasTotales): void
-    {$this->horasTotales = $horasTotales;}
 
     /* L */
     public function tiempoMin()
     {return "Tu tiempo minimo son 5 mins";}
+
     public function tiempoMax()
     {return "Tu tiempo maximo son 3H";}
 
