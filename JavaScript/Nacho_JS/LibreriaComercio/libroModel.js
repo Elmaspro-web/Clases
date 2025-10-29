@@ -5,4 +5,8 @@ export class Libro {
         this.prestado = prestado;
     }
 
+    toString()
+    {
+        return this.nombre;
+    }
 }
