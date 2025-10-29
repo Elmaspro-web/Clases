@@ -13,8 +13,7 @@ class Libro extends Hobby implements Acciones
     protected float $precio;
     protected string $nombre;
     CONST IVA = 21;
-    protected string $editorial;
-    protected int $anioPublicacion;
+
     protected $data = [];
     public static int $librosCreados = 0;
 

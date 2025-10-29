@@ -8,14 +8,35 @@
 <body>
     <header>
         <?php
-        echo match ($_GET["lang"]) {
+        $visitas = 0;
+        $lang = $_GET["lang"] ?? null;
+        echo match ($lang) {
             "ES" => "<center><h1>ESPAÑOL</h1></center>",
             "EN" => "<center><h1>ENGLISH</h1></center>",
-            "FR" => "<center><h1>FRANCE</h1></center>",
-            "ZU" => "<center><h1>ZULU</h1></center>",
-            "JP" => "<center><h1>JAPAN</h1></center>",
+            "FR" => "<center><h1>FRANÇAIS</h1></center>",
+            "ZU" => "<center><h1>ISIZULU</h1></center>",
+            "JP" => "<center><h1>日本語</h1></center>",
             default => "<center><h1>Select a lenguaje</h1></center>",
         };
+        if(!isset($_COOKIE["visitas"]))
+        {
+            setcookie("visitas", "1", time() + 3600);
+            echo "BIENVENIDO";
+        }
+        else
+        {
+            $visitas = $_COOKIE["visitas"];
+            $visitas++;
+            setcookie("visitas", $visitas, time() + 3600);
+            echo "VISITA: $visitas";
+        }
+
+        if ($visitas >= 10)
+        {
+            echo "<br>";
+            echo "Cookie eliminada. Reseteando el contador de visitas.";
+            setcookie("visitas", "", time() - 3600);
+        }
         ?>
 <center>
         <nav>
