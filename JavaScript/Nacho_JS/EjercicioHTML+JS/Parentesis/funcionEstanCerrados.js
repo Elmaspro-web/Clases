@@ -21,5 +21,3 @@ export function estanCerrados(array) {
 
     return stack.length === 0;
 }
-
-console.log(estanCerrados("()(){[}]{}"));
