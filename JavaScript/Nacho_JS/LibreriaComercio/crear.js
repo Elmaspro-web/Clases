@@ -15,15 +15,11 @@ boton.addEventListener("click", (event) => {
 
     arrayInfoLibro.push(libro);
     aniadirLibro(arrayInfoLibro);
-
-    let nLibro = libro.toString();
-    window.alert(nLibro);
-
 });
 
-function aniadirLibro(libro)
+function aniadirLibro(arrayInfoLibro)
 {
-    let almacenSesion = JSON.stringify(libro);
+    let almacenSesion = JSON.stringify(arrayInfoLibro);
     return sessionStorage.setItem("Libro", almacenSesion);
 }
 
