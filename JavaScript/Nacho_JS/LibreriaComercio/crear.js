@@ -25,5 +25,6 @@ function aniadirLibro(arrayInfoLibro)
 
 function cargarLibro()
 {
-    return sessionStorage.getItem('libro');
+
+    return JSON.parse(sessionStorage.getItem('Libro'));
 }
