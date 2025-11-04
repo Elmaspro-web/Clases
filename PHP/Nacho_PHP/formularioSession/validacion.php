@@ -7,13 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!isset($_SESSION['usuario']))
     {
         $_SESSION['usuario'] = $_POST['usuario'];
-        if ($_SESSION['usuario'] === 'nacho')
+        if ($_SESSION['usuario'] === 'nacho' || $_POST['contraseña'] === '1234')
         {
-            echo "Usuario correcto";
+            header('Location: calculos.php');
         }
         else
         {
-            echo "Usuario incorrecto";
+            header("Location: error.php");
         }
     }
 
