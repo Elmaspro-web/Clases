@@ -1,5 +1,5 @@
 <?php
-
+require_once ("./Calculadora.php");
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST')
@@ -9,13 +9,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $numero2 = $_POST['numeroDos'];
     $operaciones = $_POST['operaciones'];
     $resultado = true;
-
+    $calculadora = Calculadora::Singelton();
 
     $resultadoOperaciones = match ($operaciones) {
-        'suma' => $numero1 + $numero2,
-        'resta' => $numero1 - $numero2,
-        'multiplicacion' => $numero1 * $numero2,
-        'division' => $numero1 / $numero2,
+        'suma' => $calculadora->sumar($numero1, $numero2),
+        'resta' => $calculadora->restar($numero1, $numero2),
+        'multiplicacion' => $calculadora->multiplicar($numero1, $numero2),
+        'division' => $calculadora->division($numero1, $numero2),
     };
 
     if($resultadoOperaciones < 1000)
@@ -31,6 +31,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         {
             header("Location: calculos.php?resultado=" . $resultadoOperaciones);
         }
+    }
+    else
+    {
+        header("Location: calculos.php?resultado=" . $resultadoOperaciones);
     }
 
 

@@ -9,9 +9,11 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Calculos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
+        
         <form action="./resolucion.php" method="post">
             <input type="text" name="numeroUno" id="numeroUno">
             <select name="operaciones" id="operaciones">
