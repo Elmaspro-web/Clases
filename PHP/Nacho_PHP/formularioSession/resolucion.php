@@ -24,7 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         $_SESSION['contador'] += 1;
         if ($_SESSION['contador'] >= 5)
         {
-            header('Location: ecuacion.php');
+            $_SESSION['contador'] = 0;
+            header("Location: ecuacion.php?resultado=" . $resultadoOperaciones);
         }
         else
         {

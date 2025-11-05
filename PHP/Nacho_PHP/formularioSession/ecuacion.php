@@ -1,4 +1,17 @@
+<?php
 
+session_start();
+
+if (isset($_GET['resultado']))
+{
+    echo "Esta es la quinta operación: <br>";
+    echo "<p>" . $_GET['resultado'] . "</p>";
+    if (isset($_GET['contador']))
+    {
+        echo "<hr><p>" . $_GET['contador'] . "</p>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,17 +22,17 @@
 <a href="./calculos.php">Volver a calculos</a><br>
 <a href="./cerrarSesion.php">Cerrar Sesión</a><br>
 
-<form action="" method="post">
+<form action="" method="post"><br>
     <label>a:
         <input type="number" name="a">
-    </label>
+    </label><br>
     <label>b:
         <input type="number" name="b">
-    </label>
+    </label><br>
     <label>c:
         <input type="number" name="c">
-    </label>
-    <input type="submit" name="submit">
+    </label><br><br>
+    <input type="submit" name="submit" style="margin-left: 1%">
 </form>
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

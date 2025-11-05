@@ -29,7 +29,10 @@ session_start();
         if (isset($_GET['resultado']))
         {
             echo "<br><hr><p>" . $_GET['resultado'] . "</p>";
-            echo "<hr><p>" . $_GET['contador'] . "</p>";
+            if (isset($_GET['contador']))
+            {
+                echo "<hr><p>" . $_GET['contador'] . "</p>";
+            }
         }
 
         ?>

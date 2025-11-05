@@ -15,7 +15,7 @@
             <label for="usuario">Usuario: </label>
             <input type="text" name="usuario" id="usuario">
             <label for="contraseña">Contraseña: </label>
-            <input type="text" name="contraseña" id="contraseña">
+            <input type="password" name="contraseña" id="contraseña">
             <input type="submit" value="Iniciar Sesión">
         </form>
     </main>
