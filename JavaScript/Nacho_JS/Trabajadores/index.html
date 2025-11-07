@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página principal</title>
+    <script defer type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestión de Trabajadores</h1>
+    </header>
+
+    <main>
+        <section>
+
+            <button id="botonTrabajadorMas" type="button">Añadir trabajador</button>
+
+            <form id="formularioTrabajador" class="hidden">
+                <label>
+                    Nombre
+                    <input type="text" id="nombre">
+                </label>
+                <label>
+                    Apellido
+                    <input type="text" id="apellido">
+                </label>
+                <label>
+                    Cargo
+                    <input type="text" id="cargo">
+                </label>
+                <label>
+                    Salario
+                    <input type="number" id="salario">
+                </label>
+                <button type="submit">Guardar</button>
+            </form>
+
+            <div id="verTrabajadores"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Gestión de empleados</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear tarea</title>
+    <script defer type="module" src="./crearTarea.js"></script>
+</head>
+<body>
+    <main>
+        <form id="formularioCrearTarea">
+            <label>Título
+                <input type="text" id="tituloTarea">
+            </label>
+            <label>Descripción
+                <input type="text" id="descripcionTarea">
+            </label>
+            <label>Prioridad
+                <select id="prioridadTarea">
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baja">Baja</option>
+                </select>
+            </label>
+            <label>Fecha Límite
+                <input type="date" id="fechaLimite">
+            </label>
+            <input type="submit" value="Guardar">
+        </form>
+        <a href="Home.html">Volver a el menu principal</a>
+    </main>
+</body>
+</html>

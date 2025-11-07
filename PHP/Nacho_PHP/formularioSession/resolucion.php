@@ -37,7 +37,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         header("Location: calculos.php?resultado=" . $resultadoOperaciones);
     }
 
-
-
-
 }

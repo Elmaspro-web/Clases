@@ -1,0 +1,54 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+header,
+footer
+{
+    text-align: center;
+}
+
+section {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.hidden {
+    display: none;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+#verTrabajadores {
+    margin-top: 20px;
+}
