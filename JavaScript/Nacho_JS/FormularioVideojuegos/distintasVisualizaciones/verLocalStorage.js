@@ -9,6 +9,6 @@ verVideojuegos.forEach(Videojuego => {
             <p>Nombre: ${Videojuego.nombre}</p>
             <p>Tipo: ${Videojuego.tipo}</p>
             <p>PEGI: ${Videojuego.pegi} años</p>
-            <p>Nuevo: ${Videojuego.nuevo ? "Si" : "No"}</p>
+            <p>Nuevo: ${Videojuego.nuevo ? "No" : "Si"}</p>
         </div>`;
 });
