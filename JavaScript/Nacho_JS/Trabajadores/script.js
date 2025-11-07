@@ -34,7 +34,6 @@ formularioTrabajador.addEventListener("submit", event => {
 
     localStorage.setItem("Trabajador", JSON.stringify(guardarTrabajador));
 
-        formularioTrabajador.reset();
         formularioTrabajador.classList.add("hidden");
         window.location.reload();
 });

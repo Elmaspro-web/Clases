@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina principal</title>
+    <script src="main.js" defer type="module"></script>
+</head>
+<body>
+    <main>
+        <form>
+            <label for="titulo" id="formulario">
+                Titulo
+                <input type="text" name="titulo" id="titulo">
+            </label>
+            <label for="descripcion">
+                Descripción
+                <input type="text" name="descripcion" id="descripcion">
+            </label>
+            <label for="fechaLimite">
+                Fecha Límite
+                <input type="date" name="fechaLimite" id="fechaLimite">
+            </label>
+            <input type="hidden" name="estado" id="estado" value="En progreso">
+            <input type="submit" value="Crear" id="boton">
+        </form>
+        <section id="contenedorTareas">
+
+        </section>
+    </main>
+</body>
+</html>
