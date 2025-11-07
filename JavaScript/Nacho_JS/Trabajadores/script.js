@@ -37,11 +37,11 @@ formularioTrabajador.addEventListener("submit", event => {
         formularioTrabajador.reset();
         formularioTrabajador.classList.add("hidden");
         window.location.reload();
-
 });
 
 function mostrarTrabajador(trabajador) {
     const divTrabajador = document.createElement("div");
+    divTrabajador.className = "divHijoTrabajador";
     divTrabajador.innerHTML = `
     <p>
       <strong>${trabajador.getNombreCompleto()}</strong>: 
