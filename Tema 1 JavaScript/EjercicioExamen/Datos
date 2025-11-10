@@ -1,0 +1,28 @@
+Enunciado del Examen Simulado
+Contexto:
+Vas a crear una aplicación que analice las notas de una clase.
+Requisitos:
+Al cargar la página:
+
+Pedir al usuario una lista de notas (números entre 0 y 10) separadas por comas
+Ejemplo: 7, 5.5, 9, 3, 8, 6.5, 10
+Validar la entrada:
+
+Todos los valores deben ser números
+Deben estar entre 0 y 10 (inclusive)
+Si hay error, mostrar mensaje en la página y detener ejecución
+
+
+Procesar las notas para mostrar:
+
+Lista original de notas
+Notas aprobadas (≥ 5) y suspensas (< 5) por separado
+Nota media de la clase
+Lista ordenada de mayor a menor
+Nota más alta y más baja
+Distribución de calificaciones:
+
+Insuficiente (0-4.9)
+Suficiente/Bien (5-6.9)
+Notable (7-8.9)
+Sobresaliente (9-10)

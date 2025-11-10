@@ -1,0 +1,12 @@
+#resultado
+{
+    border: 1px blue solid;
+    padding: 2%;
+}
+
+.divApartados
+{
+    border: 1px black solid;
+    padding: 1%;
+    max-width: fit-content;
+}

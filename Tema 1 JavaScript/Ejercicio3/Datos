@@ -1,0 +1,16 @@
+Ejercicio 3: Avanzado - Sistema completo de análisis de ventas
+Consigna:
+Crea un sistema que pida al usuario ventas de cada día de la semana separadas por comas (ej: "120, 340, 200, 0, 450, 300, 280").
+Debe:
+
+Validar que sean 7 valores numéricos positivos
+Calcular y mostrar:
+
+Total de ventas de la semana
+Media diaria
+Mejor día (con mayor venta) y peor día (con menor venta)
+Días con ventas superiores a la media
+Porcentaje de cada día respecto al total
+
+
+Todo en formato lista con los días de la semana (Lunes, Martes...)

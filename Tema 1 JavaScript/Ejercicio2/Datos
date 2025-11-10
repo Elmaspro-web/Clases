@@ -1,0 +1,9 @@
+Ejercicio 2: Intermedio - Análisis de array de temperaturas
+Consigna:
+Pide al usuario temperaturas separadas por comas (ej: "15.5, 20, 18.3, 22, 17").
+Debe validar que todas sean números y luego mostrar:
+
+Temperatura media
+Temperatura máxima y mínima
+Cuántas temperaturas superan la media
+Todas las temperaturas en formato lista ordenada de mayor a menor

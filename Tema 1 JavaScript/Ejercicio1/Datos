@@ -1,0 +1,9 @@
+Ejercicio 1: Básico - Validación y factorial
+Consigna:
+Crea una función que pida un número al usuario y calcule su factorial. Debe validar que:
+
+El usuario introduzca un número
+El número sea entero
+El número sea positivo (≥ 0)
+
+Si hay error, mostrar mensaje en el DOM. Si es válido, mostrar el resultado.
