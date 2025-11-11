@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tareas</title>
+    <script src="js/main.js" defer type="module"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form id="idFormularioTarea">
+                <label for="idTitulo">Título:</label>
+                <input type="text" class="classTitulo" id="idTitulo">
+                <label for="idDescripcion">Descripción:</label>
+                <input type="text" class="classDescripcion" id="idDescripcion">
+                <label for="idSelect">Prioridad:</label>
+                <select id="idSelect">
+                    <option value="Low">Low</option>
+                    <option value="Normal" selected>Normal</option>
+                    <option value="High">High</option>
+                </select>
+                <input type="submit" id="idSubmitButton">
+            </form>
+        </section>
+        <button id="idFiltrarEstado">Estado ⬆️</button>
+        <button id="idFiltrarPrioridad">Prioridad⬆️</button>
+        <section id="idSectionTareas"></section>
+    </main>
+</body>
+</html>
