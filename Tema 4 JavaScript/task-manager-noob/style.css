@@ -1,0 +1,16 @@
+#seeTask
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div.task-item
+{
+    border: red 1px solid;
+    text-align: center;
+    margin: 2%;
+}
+.task-item button
+{
+    margin-bottom: 1.5em;
+}
