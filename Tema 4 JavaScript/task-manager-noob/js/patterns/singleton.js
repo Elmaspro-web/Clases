@@ -1,4 +1,7 @@
-import {Task} from "../models/task.js";
+import {Facade} from "../ui/facade.js";
+import {_loadLocalStorage} from "../../../gestor-de-tareas-pro99/js/utilities/localStorageManager.js";
+
+
 
 class Singleton
 {
@@ -9,58 +12,21 @@ class Singleton
 
         // Guarda la referencia de esta instancia para futuros usos
         Singleton.instance = this
-
+        this.facade = new Facade();
         // Inicializa el array de tareas cargando lo que haya en localStorage
-        this.tasks = this._loadLocalStorage();
+        this.tasks = _loadLocalStorage();
     }
 
-    addTask(title, description, priority, done)
+    toggleTaskStatus(id)
     {
-        const tarea = new Task(title, description, priority, done);
-        this.tasks.push(tarea);
-        this._addLocalStorage();
-    }
-
-    _addLocalStorage()
-    {
-        return localStorage.setItem("Tasks", JSON.stringify(this.tasks));
-    }
-
-    _loadLocalStorage()
-    {
-        return JSON.parse(localStorage.getItem("Tasks") || "[]");
-    }
-
-    toggleTaskStatus(index)
-    {
+        const index = this.tasks.findIndex(tarea => tarea.id === id);
         // Obtiene la tarea correspondiente al índice
         const tarea = this.tasks[index];
 
         // Invierte el valor de done (true <-> false)
         tarea.done = !tarea.done;
-        this._addLocalStorage();
+        _loadLocalStorage();
     }
-
-    // Elimina una tarea del array por índice y actualiza localStorage
-    removeTask(index)
-    {
-        this.tasks.splice(index, 1);
-        return this._addLocalStorage();
-    }
-
-    filterTaskByStatus(done)
-    {
-        // Devuelve solo las tareas donde tarea.done coincide con done
-        return this.tasks.filter(tarea => tarea.done === done);
-    }
-
-    filterTaskByPriority(priority)
-    {
-        // Devuelve solo las tareas donde tarea.priority coincide con el valor dado
-        return this.tasks.filter(tarea => tarea.priority === priority);
-    }
-
-
 }
 
 export {Singleton};

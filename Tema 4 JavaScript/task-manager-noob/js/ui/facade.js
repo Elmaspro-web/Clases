@@ -1,60 +1,53 @@
 import {Singleton} from "../patterns/singleton.js";
+import {_addLocalStorage, _loadLocalStorage} from "../../../gestor-de-tareas-pro99/js/utilities/localStorageManager.js";
 
 class Facade
 {
     constructor()
     {
         this.singleton = new Singleton();
-        this.strategy = null;
     }
 
-    renderTask()
-    {
+    renderTask(tarea) {
         const container = document.getElementById("seeTask");
         container.innerHTML = "";
-        for (let i = 0; i < this.singleton.tasks.length; i++)
-        {
-            const tarea = this.singleton.tasks[i];
+        for (let i = 0; i < tarea.length; i++) {
+            const tareas = tarea[i];
 
             const text = document.createElement("div");
 
-            if (tarea.done === true)
-            {
+            if (tareas.done === true) {
                 text.style.backgroundColor = "purple";
                 text.style.color = "white";
-            }
-            else if (tarea.priority === "high")
-            {
+            } else if (tareas.priority === "high") {
                 text.style.backgroundColor = "lightcoral";
-            }
-            else if (tarea.priority === "low")
-            {
+            } else if (tareas.priority === "low") {
                 text.style.backgroundColor = "lightyellow";
-            }
-            else if (tarea.priority === "normal")
-            {
+            } else if (tareas.priority === "normal") {
                 text.style.backgroundColor = "lightgreen";
             }
 
             text.classList.add("task-item");
             text.innerHTML = `
-            <p>ID: ${tarea.id}</p>
-            <p>Title: ${tarea.title}</p>
-            <p>Description: ${tarea.description}</p>
-            <p>Priority: ${tarea.priority}</p>
-            <p>Status: ${tarea.done ? "Completada" : "No Completada"}</p>
-            <p>Date: ${tarea.createAt}</p>
+            <p>ID: ${tareas.id}</p>
+            <p>Title: ${tareas.title}</p>
+            <p>Description: ${tareas.description}</p>
+            <p>Priority: ${tareas.priority}</p>
+            <p>Status: ${tareas.done ? "Completada" : "No Completada"}</p>
+            <p>Date: ${tareas.createAt}</p>
             `
             const deleteButton = document.createElement("button");
             deleteButton.textContent = "Eliminar";
             deleteButton.addEventListener("click", () => {
-                this.deleteTask(tarea.id); // método del Facade
+                tareas.splice(i, 1);
+                _addLocalStorage(tareas);
+                container.innerHTML = "";
             });
 
             const completeButton = document.createElement("button");
-            completeButton.textContent = tarea.done ? "Descompletar" : "Completar";
+            completeButton.textContent = tareas.done ? "Descompletar" : "Completar";
             completeButton.addEventListener("click", () => {
-                this.toggleTask(tarea.id);
+                this.singleton.toggleTaskStatus(tareas.id);
             });
 
             text.appendChild(completeButton);
@@ -62,27 +55,6 @@ class Facade
             container.appendChild(text);
         }
     }
-
-    toggleTask(id)
-    {
-        const index = this.singleton.tasks.findIndex(tarea => tarea.id === id);
-        this.singleton.toggleTaskStatus(index);
-        this.renderTask();
-    }
-
-    deleteTask(id)
-    {
-        const index = this.singleton.tasks.findIndex(tarea => tarea.id === id);
-        this.singleton.removeTask(index);
-        this.renderTask();
-    }
-    createTask(title, description, priority, done)
-    {
-        this.singleton.addTask(title, description, priority, done);
-        this.singleton._addLocalStorage();
-        this.renderTask();
-    }
-
 }
 
 export {Facade};

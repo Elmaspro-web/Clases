@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task manager n00b</title>
+    <script defer type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form id="idFormularioTarea">
+                <label
+                >Titulo:
+                    <input type="text" name="titulo" id="idTitulo">
+                </label>
+                <label
+                >Descripción:
+                    <input type="text" name="descripcion" id="idDescripcion">
+                </label>
+                <label
+                >Prioridad:
+                    <select id="idPrioridad" name="prioridad">
+                        <option value="Baja">Baja</option>
+                        <option value="Normal" selected>Normal</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                </label>
+                <input type="submit" id="idSubmit" value="Crear">
+            </form>
+        </section>
+        <button id="completarFiltroTareaBoton" value="completarPorFiltro">Filtrar por estado</button>
+        <button id="prioridadFiltroTareaBoton" value="prioridadPorFiltro">Filtrar por prioridad</button>
+        <section id="verTareas"></section>
+    </main>
+</body>
+</html>

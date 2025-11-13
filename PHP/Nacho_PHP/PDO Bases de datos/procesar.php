@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $email = $_POST['email'];
     $ip = $_SERVER['REMOTE_ADDR'];
 
-    $claveHash = password_hash($clave, PASSWORD_DEFAULT);
+    //$claveHash = password_hash($clave, PASSWORD_DEFAULT);
 
     try {
         $sql = "INSERT INTO usuarios (nombre, apellido, edad, clave, email, ListaIPs)
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $statement->bindParam(':nombre', $nombre);
         $statement->bindParam(':apellido', $apellido);
         $statement->bindParam(':edad', $edad, PDO::PARAM_INT);
-        $statement->bindParam(':clave', $claveHash);
+        $statement->bindParam(':clave', $clave);
         $statement->bindParam(':email', $email);
         $statement->bindParam(':ListaIPs', $ip);
 

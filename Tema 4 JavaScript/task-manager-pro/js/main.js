@@ -14,5 +14,4 @@ formularioEnviar.addEventListener("submit", function (event) {
 
     tareaFacade.crearTarea(tituloTarea, descripcionTarea, prioridadTarea);
     tareaFacade.mostrarTareas();
-
 });
