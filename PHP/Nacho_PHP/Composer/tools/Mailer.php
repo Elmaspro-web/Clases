@@ -1,11 +1,10 @@
 <?php
 namespace tools;
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 class Mailer
 {
-    public static function sendMail($remitente, $destinatario, $cc = null, $path = null): void
+    public static function sendMail($remitente, $destinatario, $asunto, $cuerpo, $cc = null, $path = null): void
     {
         $mail = new PHPMailer(true);
         try {
@@ -29,9 +28,8 @@ class Mailer
 
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Ejercicio Auto-Gmail PHP';
-            $mail->Body    = 'Me envío un pdf mediante PHPMailer';
-            $mail->AltBody = 'Me envío un pdf mediante PHPMailer';
+            $mail->Subject = $asunto;
+            $mail->Body = $cuerpo;
 
             $mail->send();
         } catch (Exception $e) {
