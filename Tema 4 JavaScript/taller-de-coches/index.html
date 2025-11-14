@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taller de Vehículos</title>
+    <script defer type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <center><h1>COCHES PARA ARREGLAR</h1></center>
+    </header>
+    <main>
+        <form id="idFormularioVehiculos">
+            <label
+            >Marca
+                <input type="text" name="Marca" id="idMarca">
+            </label>
+            <label
+            >Modelo
+                <input type="text" name="Modelo" id="idModelo">
+            </label>
+            <label
+            >Tipo
+                <select name="Tipo" id="idTipo">
+                    <option value="Coche">Coche</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Camion">Camion</option>
+                </select>
+            </label>
+            <label
+            >Combustible
+                <select name="Combustible" id="idCombustible">
+                    <option value="Electrico">Eléctrico</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Gasolina">Gasolina</option>
+                </select>
+            </label>
+            <input type="submit" value="Añadir">
+        </form>
+        <section id="idVerVehiculos"></section>
+    </main>
+</body>
+</html>

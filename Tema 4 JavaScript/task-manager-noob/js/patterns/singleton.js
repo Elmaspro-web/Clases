@@ -12,7 +12,6 @@ class Singleton
 
         // Guarda la referencia de esta instancia para futuros usos
         Singleton.instance = this
-        this.facade = new Facade();
         // Inicializa el array de tareas cargando lo que haya en localStorage
         this.tasks = _loadLocalStorage();
     }

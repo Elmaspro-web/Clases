@@ -9,7 +9,10 @@ export class TareasSingleton {
     }
 
     aniadirTarea(titulo, descripcion, prioridad) {
-        return new Tarea(titulo, descripcion, prioridad);
+       const tarea = new Tarea(titulo, descripcion, prioridad);
+       this.listaTareas.push(tarea);
+        _addLocalStorage(this.listaTareas);
+       return tarea;
     }
 
     eliminarTarea(index) {
