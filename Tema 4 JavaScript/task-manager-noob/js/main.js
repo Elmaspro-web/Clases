@@ -2,7 +2,7 @@ import { Facade } from "./ui/facade.js";
 import { Singleton } from "./patterns/singleton.js";
 import { FilterStrategy, FilterByPriority, FilterByStatus } from "./patterns/strategy.js"
 import {Task} from "../../gestor-de-tareas-pro99/js/models/tarea.js";
-import {_addLocalStorage, _loadLocalStorage} from "../../gestor-de-tareas-pro99/js/utilities/localStorageManager.js";
+import {_addLocalStorage, _loadLocalStorage} from "../../PokedexComercio/js/utilities/localStorageManager.js";
 
 const facade = new Facade();
 const singleton = new Singleton();

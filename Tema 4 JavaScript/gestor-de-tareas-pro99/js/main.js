@@ -1,7 +1,7 @@
 "use strict";
 import {TareasSingleton} from './patterns/GestorTareas.js';
 import {DomFacade} from "./ui/domFacade.js";
-import {_loadLocalStorage} from "./utilities/localStorageManager.js";
+import {_loadLocalStorage} from "../../PokedexComercio/js/utilities/localStorageManager.js";
 import {FiltroStrategy, FiltrarEstado, FiltrarPrioridad} from './patterns/filtroStrategy.js';
 
 
@@ -67,5 +67,26 @@ botonPrioridad.addEventListener("click", function (e) {
     domFacade.mostrarTarea(tareasFiltradas);
 
     prioridadFiltro = (prioridadFiltro + 1) % prioridades.length;
+
+});
+
+const formularioPrioridad = document.getElementById("formularioPrioridad");
+const formularioCompletar = document.getElementById("formularioCompletar");
+
+formularioPrioridad.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+
+   filtro.setStrategy(new FiltrarPrioridad());
+
+   const valor = document.getElementById("selectPrioridad").value;
+
+   domFacade.mostrarTarea(filtro.filter(singleton.getTareas(), valor));
+
+});
+
+formularioCompletar.addEventListener("submit", () => {
+
+
 
 });

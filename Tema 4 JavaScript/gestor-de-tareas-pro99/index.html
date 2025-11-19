@@ -31,6 +31,27 @@
             </form>
         </section>
         <button id="completarFiltroTareaBoton" value="completarPorFiltro">Filtrar por estado</button>
+        <form id="formularioCompletar">
+            <label
+            >Filtrar por Completado
+                <select id="selectCompletar">
+                    <option value="Completado">Completar</option>
+                    <option value="No completado">No completar</option>
+                </select>
+            </label>
+            <input type="submit" value="Completar">
+        </form>
+        <form id="formularioPrioridad">
+            <label
+            >Filtrar por Prioridad
+                <select id="selectPrioridad">
+                    <option value="Baja">Bajo</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Alta">Alto</option>
+                </select>
+            </label>
+            <input type="submit" value="Completar">
+        </form>
         <button id="prioridadFiltroTareaBoton" value="prioridadPorFiltro">Filtrar por prioridad</button>
         <section id="verTareas"></section>
     </main>

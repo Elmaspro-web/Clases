@@ -1,5 +1,5 @@
 import {Tarea} from '../models/tarea.js';
-import {_addLocalStorage, _loadLocalStorage} from "../utilities/localStorageManager.js";
+import {_addLocalStorage, _loadLocalStorage} from "../../../PokedexComercio/js/utilities/localStorageManager.js";
 
 export class TareasSingleton {
     constructor() {

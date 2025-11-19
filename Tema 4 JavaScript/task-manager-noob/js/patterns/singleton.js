@@ -1,5 +1,5 @@
 import {Facade} from "../ui/facade.js";
-import {_loadLocalStorage} from "../../../gestor-de-tareas-pro99/js/utilities/localStorageManager.js";
+import {_loadLocalStorage} from "../../../PokedexComercio/js/utilities/localStorageManager.js";
 
 
 

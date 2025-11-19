@@ -1,0 +1,31 @@
+.sectionStats
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nivelPromedio
+{
+    margin-left: 70%;
+}
+#botones
+{
+    text-align: center;
+    margin: 2em;
+}
+
+#idGenerarEstadisticas
+{
+    margin-right: 2em;
+}
+
+#idSeccionBuscador
+{
+    text-align: center;
+}
+
+#verPokemons
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

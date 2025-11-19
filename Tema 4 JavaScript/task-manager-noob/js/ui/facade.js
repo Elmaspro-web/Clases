@@ -1,5 +1,5 @@
 import {Singleton} from "../patterns/singleton.js";
-import {_addLocalStorage, _loadLocalStorage} from "../../../gestor-de-tareas-pro99/js/utilities/localStorageManager.js";
+import {_addLocalStorage, _loadLocalStorage} from "../../../PokedexComercio/js/utilities/localStorageManager.js";
 
 class Facade
 {

@@ -1,5 +1,5 @@
 import {TareasSingleton} from "../patterns/GestorTareas.js";
-import {_addLocalStorage} from "../utilities/localStorageManager.js";
+import {_addLocalStorage} from "../../../PokedexComercio/js/utilities/localStorageManager.js";
 
 export class DomFacade {
 
