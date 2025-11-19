@@ -1,7 +1,7 @@
 "use strict";
 
-import {_addLocalStorage, _getLoginLocalStorage} from "./storage.js";
-import {Usuario} from "./Usuario.js";
+import {_addLocalStorage, _getLoginLocalStorage} from "./utilities/storage.js";
+import {Usuario} from "./models/Usuario.js";
 
 const formularioRegistro = document.getElementById("formularioRegistro");
 const arrayUsuarios = _getLoginLocalStorage() || [];

@@ -1,6 +1,6 @@
 "use strict"
 
-import {_getLoginLocalStorage} from "./storage.js";
+import {_getLoginLocalStorage} from "./utilities/storage.js";
 
 const formularioLogin = document.getElementById("formularioLogin");
 let arrayUsuarios = _getLoginLocalStorage() || [];

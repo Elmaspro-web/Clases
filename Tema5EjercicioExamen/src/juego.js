@@ -22,12 +22,30 @@ const main = document.getElementById("mainJuego");
 const lineaArriba = document.getElementById("lineaArriba");
 const vidas = document.getElementById("vidas");
 let contador = 3;
+let listaPalabrasPantalla = [];
+const input = document.getElementById("palabraEscrita");
+
+input.addEventListener("keyup", e => {
+    if (e.key === "Enter"){
+        for (const element of listaPalabrasPantalla) {
+            if (element === input.value){
+                listaPalabrasPantalla.splice(element ,1);
+                if (element === input.value){
+                    element.delete();
+                }
+                //buscar la palabra en el array de palabras y borrar los divs que tengan como value esa palabra
+            } // guardar divs
+        }
+    }
+});
 
 function crearYAnimarPalabra() {
     const palabraAleatoria = obtenerPalabraAleatoria();
 
     const contenedorPalabra = document.createElement("div");
     contenedorPalabra.textContent = palabraAleatoria;
+
+    listaPalabrasPantalla.push(contenedorPalabra.getHTML());
 
     contenedorPalabra.style.position = "absolute";
 
@@ -40,9 +58,7 @@ function crearYAnimarPalabra() {
 
     const intervalo = setInterval(() => {
         let top = parseInt(contenedorPalabra.style.top);
-        console.log("Top actual:", top);
         contenedorPalabra.style.top = (top + 1) + "em";
-        console.log("Nuevo top:", parseInt(contenedorPalabra.style.top));
         if (parseInt(contenedorPalabra.style.top) > 49) {
             contador--;
             clearInterval(intervalo)
@@ -51,6 +67,7 @@ function crearYAnimarPalabra() {
             {
                 vidas.textContent = "";
                 alert("Has perdido");
+                window.location.reload();
             }
             else if (contador === 2)
             {
@@ -62,10 +79,14 @@ function crearYAnimarPalabra() {
             }
         }
     }, 1000);
+
 }
+
+
 
 crearYAnimarPalabra();
 
 setInterval(() => {
     crearYAnimarPalabra();
 }, 5000);
+
