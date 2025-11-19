@@ -1,0 +1,22 @@
+header
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#pfinal
+{
+    text-align: right;
+    margin-right: 4em;
+}
+#lineaAbajo
+{
+    margin-top: 46em;
+}
+footer
+{
+    text-align: center;
+}
+#palabraEscrita
+{
+    text-align: center;
+}

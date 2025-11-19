@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego</title>
+    <link rel="stylesheet" href="juego.css">
+    <script defer type="module" src="juego.js"></script>
+</head>
+<body>
+
+    <header>
+        <p>Puntuación Máxima: <span id="puntuacionMaxima">0</span></p>
+        <p id="pfinal"><span id="vidas">💖💖💖</span></p>
+    </header>
+
+    <main id="mainJuego">
+
+        <hr id="lineaArriba">
+
+        <hr id="lineaAbajo">
+
+    </main>
+    <footer>
+
+        <form id="formularioPalabraEscrita">
+            <input type="text" id="palabraEscrita">
+        </form>
+    </footer>
+
+<script>
+    const input = document.getElementById("palabraEscrita");
+    input.focus()
+</script>
+</body>
+</html>
