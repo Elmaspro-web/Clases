@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/PHP/Nacho_PHP/Composer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PHP/Nacho_PHP/Composer/tools" isTestSource="false" packagePrefix="tools\" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
