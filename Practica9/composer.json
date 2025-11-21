@@ -1,0 +1,21 @@
+{
+  "name": "nacho/transacciones",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "ignac",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "Tools\\": "tools/"
+    }
+  },
+  "require": {
+    "ext-pdo": "*"
+  }
+}
