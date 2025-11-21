@@ -1,6 +1,6 @@
 "use strict";
 
-import {_addLocalStorage, _getLoginLocalStorage} from "./utilities/storage.js";
+import {_addLocalStorage, _getLoginLocalStorage} from "../../../ExamenTema5JS2/utilities/storage.js";
 import {Usuario} from "./models/Usuario.js";
 
 const formularioRegistro = document.getElementById("formularioRegistro");

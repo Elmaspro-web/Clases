@@ -13,7 +13,6 @@ class GestorVideojuegos implements AccionesBD
         try {
             // 1. Obtener conexión
             $pdo = Conexion::getConexion();
-
             // 2. Preparar la consulta INSERT
             $sql = "INSERT INTO videojuegos (nombre, tipo, dificultad, plataforma, completado, fecha_adquisicion) 
                     VALUES (:nombre, :tipo, :dificultad, :plataforma, :completado, :fecha_adquisicion)";

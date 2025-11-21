@@ -1,0 +1,6 @@
+Hacer la practica 9 sin mirar, BBDD, login, POST y GET. Practica del chati de cookies y sesiones.
+Y en general todos los proyectos que usen composer sin mirar generar composer.
+Para composer instalar (composer init, composer install despues de todos los required)
+y si he puesto en el autoload debo hacer un composer dump-autoload para actualizar los archivos de autoload.
+
+Generar Clases, Mailer... Namespaces aprender.

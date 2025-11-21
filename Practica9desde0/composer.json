@@ -1,0 +1,20 @@
+{
+  "name": "nacho/practica9",
+  "description": "Composer para practica 9",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "nacho",
+      "email": "ignaciolangarica68@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "tools\\": "tools/",
+      "app\\": "src/"
+    }
+  },
+  "require": {
+    "ext-pdo": "*"
+  }
+}

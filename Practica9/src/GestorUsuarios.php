@@ -11,7 +11,6 @@ class GestorUsuarios
     public function verificarLogin(string $usuario, string $contrasena): bool
     {
         try {
-
             $pdo = Conexion::getConexion();
 
             $sql = "SELECT * FROM usuarios WHERE usuario = :usuario AND contrasena = :contrasena";

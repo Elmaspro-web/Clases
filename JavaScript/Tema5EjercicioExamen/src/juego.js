@@ -26,12 +26,13 @@ let listaPalabrasPantalla = [];
 const input = document.getElementById("palabraEscrita");
 
 input.addEventListener("keyup", e => {
+
     if (e.key === "Enter"){
         for (const element of listaPalabrasPantalla) {
             if (element === input.value){
                 listaPalabrasPantalla.splice(element ,1);
                 if (element === input.value){
-                    element.delete();
+                    element.textContent.remove();
                 }
                 //buscar la palabra en el array de palabras y borrar los divs que tengan como value esa palabra
             } // guardar divs
@@ -45,7 +46,7 @@ function crearYAnimarPalabra() {
     const contenedorPalabra = document.createElement("div");
     contenedorPalabra.textContent = palabraAleatoria;
 
-    listaPalabrasPantalla.push(contenedorPalabra.getHTML());
+    listaPalabrasPantalla.push(contenedorPalabra);
 
     contenedorPalabra.style.position = "absolute";
 
