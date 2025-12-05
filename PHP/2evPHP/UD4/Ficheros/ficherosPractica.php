@@ -67,4 +67,5 @@ for ($j = 0; $j < ceil(count($abecedario) / 5); $j++)
             }
     }
 }
+
 fclose($abecedario_archivo);
