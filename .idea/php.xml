@@ -12,6 +12,7 @@
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
+      <path value="$PROJECT_DIR$/Practica9/vendor/composer" />
       <path value="$PROJECT_DIR$/PHP/Nacho_PHP/Composer/vendor/phpmailer/phpmailer" />
       <path value="$PROJECT_DIR$/PHP/Nacho_PHP/Composer/vendor/composer" />
       <path value="$PROJECT_DIR$/Practica9/vendor/composer" />
